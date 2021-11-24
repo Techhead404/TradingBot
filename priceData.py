@@ -24,6 +24,7 @@ lowData1h = []
 closeData1h = []
 volData1h = []
 
+test = []
 def getCandle(symbol):
 
     candles = market.fetch_ohlcv(symbol, "1m")
