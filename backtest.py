@@ -31,4 +31,4 @@ for item in closeData:
         startCash += 1
 
 
-    print(startCash,coin.price_to_precision(symbol,price), avg)
+    print(startCash,market.price_to_precision(symbol,price), avg)

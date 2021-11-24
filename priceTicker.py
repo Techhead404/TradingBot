@@ -41,7 +41,7 @@ def trailingStopLoss():
         output(f"{symbol}**{market.price_to_precision(symbol,pricePaid)}**{uBal}**{nBal}**{round(bidamount)}**"
                f"**{market.price_to_precision(symbol,closeData[-1])}**{market.price_to_precision(symbol,closeData[-2])}**"
                f"**{market.price_to_precision(symbol,closeData15[-1])}**{market.price_to_precision(symbol,closeData15[-2])}**"
-               f"**{market.price_to_precision(symbol, closeDatah[-1])}**{market.price_to_precision(symbol, closeDatah[-1])}**"
+               f"**{market.price_to_precision(symbol, closeData1h[-1])}**{market.price_to_precision(symbol, closeData1h[-1])}**"
                f"**{market.price_to_precision(symbol,closeData[-1])}**{datetime.now().strftime('%H:%M:%S')}**")
         print(pricePaid, price)
 
@@ -248,13 +248,13 @@ while True:
             shortavg = (min(closeData[-60:-2]) + max(openData[-60:-2])) / 2
             shortavg2 = (min(closeData[-30:-2]) + max(openData[-30:-2])) / 2
 
-            getCandleh(symbol)
+            getCandle1h(symbol)
 
-            houravg1 = (closeDatah[-3] + openDatah[-3]) / 2
-            houravg2 = (closeDatah[-2] + openDatah[-2]) / 2
+            houravg1 = (closeData1h[-3] + openData1h[-3]) / 2
+            houravg2 = (closeData1h[-2] + openData1h[-2]) / 2
             mintrend = sum(closeData[-10:-1]) / len(closeData[-10:-1])
             mintrend15 = sum(closeData15[-5:-1]) / len(closeData15[-5:-1])
-            mintrend1h = sum(closeDatah[-5:-1]) / len(closeDatah[-5:-1])
+            mintrend1h = sum(closeData1h[-5:-1]) / len(closeData1h[-5:-1])
 
             spreadper = ((min(closeData[-30:]) - max(closeData[-30:])) / max(closeData[-30:])) * 100
 

@@ -8,7 +8,7 @@ symbol = "MANA/USD"
 while True:
     getCandle(symbol)
     getCandle15(symbol)
-    getCandleh(symbol)
+    getCandle1h(symbol)
     #getBooks(symbol)
 
     orderbook = market.fetch_order_book(symbol)
@@ -70,7 +70,7 @@ while True:
 
     mintrend = sum(closeData[-10:]) / len(closeData[-10:])
     mintrend15 = sum(closeData15[-5:]) / len(closeData15[-5:])
-    mintrend1h = sum(closeDatah[-5:]) / len(closeDatah[-5:])
+    mintrend1h = sum(closeData1h[-5:]) / len(closeData1h[-5:])
 
     print("Price", price, "     Current Open",openData[-1], "      BidAmount", bidamount, "     Time", datetime.now().strftime("%H:%M:%S") )
 
