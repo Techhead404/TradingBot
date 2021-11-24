@@ -1,4 +1,5 @@
 #Git Ignore list
+.gitignore
 config.py
 actions.csv
 bidper.csv
