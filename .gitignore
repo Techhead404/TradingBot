@@ -1,0 +1,12 @@
+#Git Ignore list
+config.py
+actions.csv
+bidper.csv
+bidvol.csv
+key.csv
+mydata.csv
+plotchart.png
+Price.csv
+volume.csv
+main.py
+test.py
