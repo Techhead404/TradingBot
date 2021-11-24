@@ -1,5 +1,5 @@
 import ccxt
-from old.config import *
+from TradingBot.config import *
 import time
 
 

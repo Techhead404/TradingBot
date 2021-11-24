@@ -7,7 +7,7 @@ import pandas as pd
 from scipy.misc import electrocardiogram
 from scipy.signal import find_peaks
 from scipy.signal import argrelextrema
-from old.priceData import *
+from TradingBot.priceData import *
 import numpy as np
 from scipy import signal
 import os

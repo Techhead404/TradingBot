@@ -1,5 +1,5 @@
-from old.priceData import *
-from old.config import *
+from TradingBot.priceData import *
+from TradingBot.config import *
 import ccxt
 
 symbol = 'SHIB/USDT'

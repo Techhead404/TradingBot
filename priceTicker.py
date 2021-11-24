@@ -1,8 +1,8 @@
 import time
-from old.priceData import *
+from TradingBot.priceData import *
 from datetime import datetime
 import ccxt as ex
-from old.config import *
+from TradingBot.config import *
 #from old.priceData import closeData, closeData15, highData, lowData, openData, getBooks
 import pandas as pd
 #from test import text

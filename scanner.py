@@ -1,5 +1,5 @@
 #from old.priceTicker import *
-from old.priceData import *
+from TradingBot.priceData import *
 from csv import writer
 from datetime import datetime
 

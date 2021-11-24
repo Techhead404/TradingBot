@@ -1,5 +1,5 @@
-from old.priceData import *
-from old.config import market
+from TradingBot.priceData import *
+from TradingBot.config import market
 import matplotlib.pyplot as plt
 from csv import writer
 from datetime import datetime
